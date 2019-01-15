@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="宋体" Size="9" />
+  <Class Name="DataBaseAgent.DBFactory" Collapsed="true">
+    <Position X="3" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DBFactory.cs</FileName>
+      <HashCode>AAAAAAAQAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SqlDBOperator" />
+      <Property Name="OleDBOperator" />
+    </ShowAsAssociation>
+    <AssociationLine Name="SqlDBOperator" Type="DataBaseAgent.SqlDBOperator" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.5" Y="4.009" />
+        <Point X="6.062" Y="4.009" />
+        <Point X="6.062" Y="2.147" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="OleDBOperator" Type="DataBaseAgent.OleDBOperator" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3" Y="4.009" />
+        <Point X="1.438" Y="4.009" />
+        <Point X="1.438" Y="2.147" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Class Name="DataBaseAgent.DBOperator" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DBOperator.cs</FileName>
+      <HashCode>AAAAgEAAAAABIgAAAAAgAAAAAAAgAAAAAAAAAKCAACA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseAgent.SqlDBOperator" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>SqlDBOperator.cs</FileName>
+      <HashCode>ACAAgEAAAAABIgAAAAAkBIIAAAQgAAAAAAAAAqCAACA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TypeConvert" />
+      <Property Name="Conn" />
+    </ShowAsAssociation>
+    <AssociationLine Name="TypeConvert" Type="DataBaseAgent.TypeConvert" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.812" Y="2.147" />
+        <Point X="5.812" Y="2.509" />
+        <Point X="4.5" Y="2.509" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Class Name="DataBaseAgent.TypeConvert" Collapsed="true">
+    <Position X="3" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TypeConvert.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAIAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseAgent.Conn" Collapsed="true">
+    <Position X="3" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Conn.cs</FileName>
+      <HashCode>AAAEAAAAAABAAAAAAAAAAABAAAAAACAAAAAAAAIAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseAgent.OleDBOperator" Collapsed="true">
+    <Position X="0.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>OleDBOperator.cs</FileName>
+      <HashCode>ACAAgECAAAABIgAAAAAkBIIAAAQgAAAAAAAAAqCACCA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TypeConvert" />
+      <Property Name="Conn" />
+    </ShowAsAssociation>
+    <AssociationLine Name="TypeConvert" Type="DataBaseAgent.TypeConvert" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.75" Y="2.147" />
+        <Point X="1.75" Y="2.509" />
+        <Point X="3" Y="2.509" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Class Name="DataBaseAgent.SimpleType" Collapsed="true">
+    <Position X="3" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>SimpleType.cs</FileName>
+      <HashCode>ABBAEAAAAAAAAAAgAAAAAAAAIAAACDAAAAAACAAgASE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseAgent.TableObject">
+    <Position X="3" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>TableObject.cs</FileName>
+      <HashCode>CCAQAAABEAGAAAAAAiAABAAhQAAUAEwAAAAAABEAICA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ParamObject" />
+      <Property Name="DBFactory" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="DataBaseAgent.ParamObject" Collapsed="true">
+    <Position X="5.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ParamObject.cs</FileName>
+      <HashCode>AAAAAAAIABAiAAAAAAIAAACAEAQAAIAAAAAAAwAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>
